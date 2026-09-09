@@ -1,9 +1,3 @@
-/* =========================================
-   TRIASWEAR CUSTOM STYLES
-   ========================================= */
-
-/* ---------- Base ---------- */
-
 html {
   scroll-behavior: smooth;
 }
@@ -27,18 +21,12 @@ img {
   text-transform: uppercase;
 }
 
-
-/* ---------- Announcement Bar ---------- */
-
 .announcement-bar {
   background-color: #111111;
   color: #ffffff;
   font-size: 12px;
   letter-spacing: 1px;
 }
-
-
-/* ---------- Navbar ---------- */
 
 .navbar {
   background-color: #ffffff;
@@ -48,14 +36,14 @@ img {
 }
 
 .navbar-brand {
-  color: #111111;
-  font-size: 22px;
-  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-brand:hover,
-.navbar-brand:focus {
-  color: #111111;
+.brand-logo {
+  width: 130px;
+  height: 38px;
+  object-fit: contain;
 }
 
 .nav-link {
@@ -78,49 +66,29 @@ img {
   box-shadow: none;
 }
 
-
-/* ---------- Hero ---------- */
-
 .hero {
-  min-height: 78vh;
+  min-height: 70vh;
   display: flex;
-  align-items: flex-end;
-  position: relative;
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.08),
-      rgba(0, 0, 0, 0.55)
-    ),
-    url("../images/hero-background.jpg");
-
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-}
-
-.hero-content {
-  padding-bottom: 4rem;
+  align-items: center;
+  background-color: #f7f7f5;
 }
 
 .hero h1 {
-  max-width: 800px;
-  margin-bottom: 18px;
+  max-width: 950px;
+  margin: 0 auto;
   font-size: 3rem;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -2px;
 }
 
-.hero p {
-  max-width: 520px;
-  margin-bottom: 28px;
-  color: #f1f1f1;
+.hero-description {
+  max-width: 550px;
+  margin: 28px auto;
+  color: #666666;
   font-size: 17px;
   line-height: 1.6;
 }
-
-
-/* ---------- Bootstrap Button Overrides ---------- */
 
 .btn-primary {
   background-color: #111111;
@@ -138,29 +106,13 @@ img {
   color: #ffffff;
 }
 
-.hero .btn-primary {
-  background-color: #ffffff;
-  border-color: #ffffff;
-  color: #111111;
-}
-
-.hero .btn-primary:hover,
-.hero .btn-primary:focus {
-  background-color: #eeeeee;
-  border-color: #eeeeee;
-  color: #111111;
-}
-
-
-/* ---------- Highlight Strip ---------- */
-
 .highlights {
   background-color: #111111;
   color: #ffffff;
 }
 
 .highlight-item {
-  padding: 22px 12px;
+  padding: 24px 12px;
 }
 
 .highlight-item h2 {
@@ -178,9 +130,6 @@ img {
   text-transform: uppercase;
 }
 
-
-/* ---------- Collection ---------- */
-
 .collection-section {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -191,26 +140,31 @@ img {
 }
 
 .collection-heading h2 {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: -2px;
 }
 
-.collection-heading p {
-  max-width: 500px;
+.collection-heading > p:last-child {
+  max-width: 560px;
   color: #666666;
+  line-height: 1.7;
 }
 
 .product-card {
   margin-bottom: 3rem;
 }
 
+.product-carousel {
+  overflow: hidden;
+  background-color: #eeeeec;
+}
+
 .product-image {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  background-color: #eeeeec;
 }
 
 .product-info {
@@ -229,117 +183,124 @@ img {
   font-size: 13px;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
 
-/* ---------- Story / About ---------- */
+.product-carousel:hover .carousel-control-prev,
+.product-carousel:hover .carousel-control-next,
+.product-carousel:focus-within .carousel-control-prev,
+.product-carousel:focus-within .carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 34px;
+  height: 34px;
+  background-color: #111111;
+  background-size: 14px;
+  border-radius: 50%;
+}
 
 .story-section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   background-color: #ffffff;
 }
 
-.story-image {
-  width: 100%;
-  height: 450px;
-  object-fit: cover;
-}
-
-.story-content {
-  padding: 3rem 24px;
-}
-
-.story-content h2 {
-  max-width: 520px;
-  margin-bottom: 24px;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.15;
-  letter-spacing: -1px;
-}
-
-.story-content p {
-  max-width: 520px;
-  color: #555555;
-  line-height: 1.8;
-}
-
-
-/* ---------- Quality ---------- */
-
-.quality-section {
-  background-color: #f0f0ed;
-}
-
-.quality-image {
-  width: 100%;
-  height: 450px;
-  object-fit: cover;
-}
-
-.quality-content {
-  padding: 3rem 24px;
-}
-
-.quality-content h2 {
-  max-width: 500px;
-  margin-bottom: 24px;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.15;
-  letter-spacing: -1px;
-}
-
-.quality-content p {
-  max-width: 500px;
-  color: #555555;
-  line-height: 1.8;
-}
-
-
-/* ---------- Drop Banner ---------- */
-
-.drop-section {
-  min-height: 600px;
-  display: flex;
-  align-items: center;
-  position: relative;
-
-  background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url("../images/drop-background.jpg");
-
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-}
-
-.drop-content {
-  max-width: 700px;
-}
-
-.drop-section .section-label {
-  color: #dddddd;
-}
-
-.drop-section h2 {
-  margin-bottom: 20px;
+.story-section h2 {
+  max-width: 950px;
+  margin: 0 auto 32px;
   font-size: 3rem;
   font-weight: 400;
+  line-height: 1.15;
   letter-spacing: -2px;
 }
 
-.drop-section p {
-  margin-bottom: 28px;
-  color: #eeeeee;
+.story-section > .container > p:not(.section-label) {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #666666;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.quality-section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #f0f0ed;
+}
+
+.quality-section h2 {
+  max-width: 480px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.quality-intro {
+  max-width: 680px;
+  color: #555555;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.quality-points {
+  margin-top: 3rem;
+}
+
+.quality-points h3 {
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.quality-points p {
+  max-width: 190px;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.drop-section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.drop-section .section-label {
+  color: #aaaaaa;
+}
+
+.drop-section h2 {
+  margin-bottom: 24px;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+
+.drop-section p:not(.section-label) {
+  margin-bottom: 32px;
+  color: #cccccc;
   font-size: 17px;
 }
 
-
-/* ---------- Information Strip ---------- */
+.drop-section .btn-light {
+  border-radius: 50px;
+  padding: 13px 26px;
+  font-size: 14px;
+}
 
 .info-strip {
-  background-color: #111111;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -350,9 +311,6 @@ img {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
-
-/* ---------- Join Section ---------- */
 
 .join-section {
   padding-top: 6rem;
@@ -365,7 +323,7 @@ img {
   font-weight: 400;
 }
 
-.join-section p {
+.join-section p:not(.section-label) {
   max-width: 460px;
   color: #666666;
 }
@@ -387,9 +345,6 @@ img {
   padding-right: 24px;
 }
 
-
-/* ---------- Footer ---------- */
-
 footer {
   background-color: #f7f7f5;
   border-top: 1px solid #dddddd;
@@ -406,26 +361,16 @@ footer a:focus {
   color: #555555;
 }
 
-
-/* ---------- Tablet and Desktop ---------- */
-
 @media (min-width: 768px) {
   .hero h1 {
     font-size: 5rem;
   }
 
-  .story-image,
-  .quality-image {
-    height: 650px;
+  .story-section h2 {
+    font-size: 3rem;
   }
 
-  .story-content,
-  .quality-content {
-    padding: 5rem;
-  }
-
-  .story-content h2,
-  .quality-content h2 {
+  .quality-section h2 {
     font-size: 3rem;
   }
 
@@ -434,9 +379,6 @@ footer a:focus {
   }
 }
 
-
-/* ---------- Large Desktop ---------- */
-
 @media (min-width: 1200px) {
   .hero h1 {
     font-size: 6rem;
@@ -444,5 +386,58 @@ footer a:focus {
 
   .collection-heading h2 {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    margin-left: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .brand-logo {
+    width: 110px;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .collection-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .story-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .story-section h2 {
+    font-size: 2rem;
+  }
+
+  .quality-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .drop-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .drop-section h2 {
+    font-size: 3rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1;
   }
 }
