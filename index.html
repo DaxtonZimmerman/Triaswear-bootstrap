@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>TriasWear | Built From Nothing</title>
+    <title>TriasWear | Streetwear Built With Purpose</title>
 
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,13 +15,25 @@
       crossorigin="anonymous"
     />
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!-- Announcement -->
+    <aside class="announcement-bar text-center py-2">
+      First drop October 1 — join the journey
+    </aside>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">TRIASWEAR</a>
+
+        <a class="navbar-brand fw-bold" href="#home">
+          triaswear
+        </a>
 
         <button
           class="navbar-toggler"
@@ -35,91 +49,450 @@
 
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto">
+
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#home"
+              >
+                Home
+              </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#collection">Collection</a>
+              <a class="nav-link" href="#collection">
+                Collection
+              </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about">
+                About
+              </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#quality">Quality</a>
+              <a class="nav-link" href="#quality">
+                Quality
+              </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#drop">Drop</a>
+              <a class="nav-link" href="#drop">
+                Drop
+              </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#join">Join</a>
+              <a class="nav-link" href="#join">
+                Join
+              </a>
             </li>
+
           </ul>
         </div>
+
       </div>
     </nav>
-    <header>
-      <section class="container">
-        <h1>BUILT FROM NOTHING.</h1>
 
-        <p>Three friends. One vision. TriasWear drops October 1.</p>
 
-        <a href="#collection" class="btn btn-primary"> View the Collection </a>
-      </section>
+    <!-- Hero -->
+    <header id="home" class="hero">
+      <div class="container hero-content">
+
+        <h1>TriasWear</h1>
+
+        <p>
+          Utah-built streetwear for people chasing
+          something bigger.
+        </p>
+
+        <a href="#collection" class="btn btn-primary">
+          Shop the Collection
+        </a>
+
+      </div>
     </header>
 
+
     <main>
-      <section class="container py-5">
-        <div class="row text-center">
-          <div class="col-12 col-md-4 mb-4">
-            <h2 class="fw-bold">01</h2>
-            <p>First Collection</p>
-          </div>
 
-          <div class="col-12 col-md-4 mb-4">
-            <h2 class="fw-bold">OCT 1</h2>
-            <p>Drop Date</p>
-          </div>
+      <!-- Highlights -->
+      <section class="highlights">
+        <div class="container">
+          <div class="row text-center">
 
-          <div class="col-12 col-md-4 mb-4">
-            <h2 class="fw-bold">24/7</h2>
-            <p>Online Access</p>
+            <div class="col-12 col-md-4 highlight-item">
+              <h2>3 FRIENDS</h2>
+              <p>Built by lifelong friends</p>
+            </div>
+
+            <div class="col-12 col-md-4 highlight-item">
+              <h2>OCTOBER 1</h2>
+              <p>First official drop</p>
+            </div>
+
+            <div class="col-12 col-md-4 highlight-item">
+              <h2>UTAH BUILT</h2>
+              <p>Streetwear with purpose</p>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <section id="collection" class="container py-5">
+
+      <!-- Collection -->
+      <section
+        id="collection"
+        class="container collection-section"
+      >
+
+        <div class="collection-heading">
+          <p class="section-label">
+            Collection 01
+          </p>
+
+          <h2>Featured Pieces</h2>
+
+          <p>
+            The first TriasWear collection.
+            Designed around bold graphics,
+            ambition, and purpose.
+          </p>
+        </div>
+
+
         <div class="row">
-          <article class="col-12 col-md-4">
-            <h2>Samurai</h2>
-            <p>Japanese-inspired streetwear built around detailed artwork.</p>
+
+          <!-- Samurai -->
+          <article class="col-12 col-md-4 product-card">
+
+            <img
+              src="images/samurai.jpg"
+              class="img-fluid product-image"
+              alt="TriasWear Samurai graphic shirt"
+            />
+
+            <div class="product-info">
+              <h3>Samurai</h3>
+              <p>Collection 01</p>
+            </div>
+
           </article>
 
-          <article class="col-12 col-md-4">
-            <h2>Tiger</h2>
-            <p>Bold artwork designed for a clean streetwear silhouette.</p>
+
+          <!-- Tiger -->
+          <article class="col-12 col-md-4 product-card">
+
+            <img
+              src="images/tiger.jpg"
+              class="img-fluid product-image"
+              alt="TriasWear Tiger graphic shirt"
+            />
+
+            <div class="product-info">
+              <h3>Tiger</h3>
+              <p>Collection 01</p>
+            </div>
+
           </article>
 
-          <article class="col-12 col-md-4">
-            <h2>Sacred Sorrow</h2>
-            <p>A darker graphic piece from our first collection.</p>
+
+          <!-- Sacred Sorrow -->
+          <article class="col-12 col-md-4 product-card">
+
+            <img
+              src="images/sacred-sorrow.jpg"
+              class="img-fluid product-image"
+              alt="TriasWear Sacred Sorrow graphic shirt"
+            />
+
+            <div class="product-info">
+              <h3>Sacred Sorrow</h3>
+              <p>Collection 01</p>
+            </div>
+
           </article>
+
         </div>
       </section>
+
+
+      <!-- Our Story -->
+      <section id="about" class="story-section">
+        <div class="container-fluid p-0">
+
+          <div class="row g-0 align-items-center">
+
+            <div class="col-12 col-md-6">
+              <img
+                src="images/founders.jpg"
+                class="story-image"
+                alt="The founders of TriasWear"
+              />
+            </div>
+
+            <div class="col-12 col-md-6">
+
+              <div class="story-content">
+
+                <p class="section-label">
+                  Our Story
+                </p>
+
+                <h2>
+                  Created by three lifelong friends.
+                </h2>
+
+                <p>
+                  Trias stands for ambition, strength,
+                  and drive. We created TriasWear to
+                  build clothing that represents
+                  chasing goals and becoming something
+                  bigger.
+                </p>
+
+                <p>
+                  What started as an idea between
+                  friends became a brand we are building
+                  piece by piece.
+                </p>
+
+                <a
+                  href="#collection"
+                  class="btn btn-primary mt-3"
+                >
+                  Explore TriasWear
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Quality -->
+      <section id="quality" class="quality-section">
+        <div class="container-fluid p-0">
+
+          <div class="row g-0 align-items-center">
+
+            <!-- Text first on desktop -->
+            <div class="col-12 col-md-6 order-2 order-md-1">
+
+              <div class="quality-content">
+
+                <p class="section-label">
+                  Built With Purpose
+                </p>
+
+                <h2>
+                  Quality we actually care about.
+                </h2>
+
+                <p>
+                  We want every TriasWear piece to
+                  look good, feel good, and be
+                  something we would actually wear
+                  ourselves.
+                </p>
+
+                <p>
+                  From the artwork to the final
+                  product, we pay attention to the
+                  details that make each piece feel
+                  complete.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <!-- Image -->
+            <div class="col-12 col-md-6 order-1 order-md-2">
+
+              <img
+                src="images/quality.jpg"
+                class="quality-image"
+                alt="Close-up view of TriasWear clothing quality"
+              />
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Drop Banner -->
+      <section id="drop" class="drop-section">
+
+        <div class="container">
+
+          <div class="drop-content">
+
+            <p class="section-label">
+              Collection 01
+            </p>
+
+            <h2>
+              October 1
+            </h2>
+
+            <p>
+              Our first official TriasWear
+              collection is almost here.
+            </p>
+
+            <a href="#join" class="btn btn-primary">
+              Join the Drop
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- Info Strip -->
+      <section class="info-strip">
+        <div class="container-fluid">
+
+          <div class="row text-center">
+
+            <div class="col-12 col-md-3 info-strip-item">
+              Designed by three lifelong friends
+            </div>
+
+            <div class="col-12 col-md-3 info-strip-item">
+              Streetwear built with purpose
+            </div>
+
+            <div class="col-12 col-md-3 info-strip-item">
+              First drop October 1
+            </div>
+
+            <div class="col-12 col-md-3 info-strip-item">
+              Built in Utah
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- Email Signup -->
+      <section id="join" class="join-section">
+        <div class="container">
+
+          <div class="row align-items-center">
+
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+
+              <p class="section-label">
+                Stay Connected
+              </p>
+
+              <h2>
+                Join our email list.
+              </h2>
+
+              <p>
+                Get updates, early access,
+                and news about upcoming
+                TriasWear drops.
+              </p>
+
+            </div>
+
+
+            <div class="col-12 col-md-7">
+
+              <form>
+
+                <div class="input-group">
+
+                  <label
+                    for="email"
+                    class="visually-hidden"
+                  >
+                    Email address
+                  </label>
+
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="Email address"
+                    required
+                  />
+
+                  <button
+                    class="btn btn-dark"
+                    type="submit"
+                  >
+                    Join
+                  </button>
+
+                </div>
+
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </main>
 
-    <footer class="text-center py-4">
-      <p class="mb-0">&copy; 2026 TriasWear</p>
+
+    <!-- Footer -->
+    <footer class="py-4">
+
+      <div class="container">
+
+        <div class="row align-items-center">
+
+          <div
+            class="col-12 col-md-6 text-center text-md-start"
+          >
+            <p class="mb-0">
+              &copy; 2026 TriasWear
+            </p>
+          </div>
+
+          <div
+            class="col-12 col-md-6 text-center text-md-end mt-3 mt-md-0"
+          >
+            <a
+              href="#home"
+              class="text-decoration-none"
+            >
+              Back to top
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
     </footer>
 
+
+    <!-- Bootstrap JavaScript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>
